@@ -1,18 +1,31 @@
 Requires
+
 OpenCV
 
+
 Usage:
+
+
 for info about yolonet see https://pjreddie.com/darknet/yolo/
 
 TL;DR
+
 git clone https://github.com/MadisKarli/darknet
+
 cd darknet
+
 make
+
 ./start_me_first.sh
 
+
 then run the application as
+
+
 python find_cars.py -v data/video.mp4 #where data/video.mp4 is input video
+
 python find_cars.py -h #show other parameters
+
 
 
 Original readme
