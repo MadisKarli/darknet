@@ -1,3 +1,6 @@
+Requires
+OpenCV
+
 Usage:
 for info about yolonet see https://pjreddie.com/darknet/yolo/
 
