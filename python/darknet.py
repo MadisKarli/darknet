@@ -1,5 +1,4 @@
 from ctypes import *
-import math
 import random
 
 def sample(probs):
@@ -36,7 +35,7 @@ class METADATA(Structure):
     
 # TODO this is hardcoded
 #lib = CDLL("/home/pjreddie/documents/darknet/libdarknet.so", RTLD_GLOBAL)
-lib = CDLL("/home/madis/projects/car_logo_detection_video/loxodon/darknet/libdarknet.so", RTLD_GLOBAL)
+lib = CDLL("/app/darknet/libdarknet.so", RTLD_GLOBAL)
 lib.network_width.argtypes = [c_void_p]
 lib.network_width.restype = c_int
 lib.network_height.argtypes = [c_void_p]

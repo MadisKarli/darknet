@@ -1,12 +1,14 @@
 import argparse
-import python.darknet as dn
+import os
+import numpy as np
 import cv2
+from time import sleep
+import darknet.python.darknet as dn
 import shutil
 
-
 def init_net():
-    net = dn.load_net(b"cfg/tiny-yolo.cfg", b"tiny-yolo.weights", 0)
-    meta = dn.load_meta(b"cfg/coco.data")
+    net = dn.load_net(b"/app/darknet/cfg/tiny-yolo.cfg", b"/app/darknet/tiny-yolo.weights", 0)
+    meta = dn.load_meta(b"/app/darknet/cfg/coco.data")
     return net, meta
 
 
