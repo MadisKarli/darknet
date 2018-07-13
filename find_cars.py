@@ -7,7 +7,7 @@ import darknet.python.darknet as dn
 import shutil
 
 def init_net():
-    net = dn.load_net(b"/app/darknet/cfg/tiny-yolo.cfg", b"/app/darknet/tiny-yolo.weights", 0)
+    net = dn.load_net(b"/app/darknet/cfg/yolov2-tiny.cfg", b"/app/darknet/yolov2-tiny.weights", 0)
     meta = dn.load_meta(b"/app/darknet/cfg/coco.data")
     return net, meta
 
